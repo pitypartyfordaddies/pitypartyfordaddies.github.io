@@ -1,0 +1,98 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    background-color: #333;
+}
+
+body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+    max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+    padding-top: 20px;
+    /* margin-bottom: 2rem; */
+}
+
+.masthead .logo {
+    height: 130px;
+    width: 130px;
+    border: 2px solid #e9e9e9;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.masthead h3 {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+/*
+ * main
+ */
+.main{
+    margin-top:20px;
+}
+ .main .btn{
+    width:100%;
+    text-shadow: none;
+    border: .05rem solid #fff;
+    background: #FFF8ED;
+    border-radius: 4px;
+    color: #222;
+    font-family: 'Droid Sans', 'Open Sans';
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 14px 20px;
+ }
+
+ .main .btn.disabled{
+    opacity: 50%;
+ }
+
+/*
+ * Footer
+ */
+.mastfoot {
+    color: rgba(255, 255, 255, .5);
+}
