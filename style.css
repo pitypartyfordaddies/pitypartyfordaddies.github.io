@@ -95,4 +95,15 @@ body {
  */
 .mastfoot {
     color: rgba(255, 255, 255, .5);
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    padding: 21px;
+}
+
+.mastfoot a img{
+height:50px;
+
 }
