@@ -12,9 +12,7 @@ a:hover {
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
-.btn-secondary:focus {
-
-}
+.btn-secondary:focus {}
 
 
 /*
@@ -68,11 +66,12 @@ body {
 /*
  * main
  */
-.main{
-    margin-top:20px;
+.main {
+    margin-top: 20px;
 }
- .main .btn{
-    width:100%;
+
+.main .btn {
+    width: 100%;
     text-shadow: none;
     border: .05rem solid #fff;
     background: #FFF8ED;
@@ -84,26 +83,26 @@ body {
     text-decoration: none;
     margin-bottom: 10px;
     padding: 14px 20px;
- }
+}
 
- .main .btn.disabled{
+.main .btn.disabled {
     opacity: 50%;
- }
+}
 
 /*
  * Footer
  */
 .mastfoot {
     color: rgba(255, 255, 255, .5);
-    position:fixed;
-    left:0;
-    bottom:0;
-    width:100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     padding: 21px;
 }
 
-.mastfoot a img{
-height:50px;
-
+.mastfoot a img {
+    width: 40px;
+    margin: 15px;
 }
