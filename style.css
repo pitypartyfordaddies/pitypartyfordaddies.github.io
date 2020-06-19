@@ -41,6 +41,16 @@ body {
     max-width: 42em;
 }
 
+/*
+ * Modal
+ */
+.modal-content{
+    background:#111
+}
+
+.modal-title{
+    font-size:16px
+}
 
 /*
  * Header
