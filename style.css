@@ -23,6 +23,7 @@ html,
 body {
     height: 100%;
     background-color: #333;
+    font-family: "Microsoft JhengHei", "LiGothic", "FangSong", Arial, serif;
 }
 
 body {
@@ -45,11 +46,20 @@ body {
  * Modal
  */
 .modal-content{
-    background:#111
+    background:#2a2829
+}
+
+.modal-header{
+    border-bottom: 1px solid #3a3434;
 }
 
 .modal-title{
     font-size:16px
+}
+
+.close{
+    color: #fff;
+    text-shadow: 0 1px 0 #333;
 }
 
 /*
@@ -67,12 +77,26 @@ body {
     border-radius: 50%;
     margin-bottom: 15px;
 }
+.masthead .heading{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 340px;
+    margin: auto;
+}
 
 .masthead h3 {
     font-weight: 700;
     font-size: 26px;
+    text-align: center;
 }
 
+.masthead .js-openBox img{
+    width: 40px;
+    position: absolute;
+    right: 36px;
+    top: -5px;
+}
 /*
  * main
  */

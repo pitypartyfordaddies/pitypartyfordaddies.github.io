@@ -16,6 +16,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169245069-1"></script>
     <script>
@@ -36,6 +37,9 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modalmanager.min.js">
     </script>
+
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body class="text-center">
@@ -43,32 +47,33 @@
         <header class="masthead">
             <div class="inner">
                 <image class="logo" src="image/logo-small.jpg"></image>
-                <h3>老爸取暖互助會</h3>
+                <div class="heading">
+                    <h3>老爸取暖互助會</h3>
+                    <!-- Button trigger modal -->
+                    <a href="javascript:;" class="js-openBox" data-toggle="modal" data-target="#modalbox">
+                        <image src="image/shareBtn.png">
+                    </a>
+                </div>
                 <p>Pity Party For Daddies</h1>
-                    <!-- <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav> -->
             </div>
         </header>
 
         <div class="main">
-            <a href="https://open.spotify.com/show/74XqmZ5g125uUOBj5NhPM1?si=AxTMH6rKRjiY221JoGOHnQ" class="btn">🎧
+            <a href="https://open.spotify.com/show/74XqmZ5g125uUOBj5NhPM1?si=AxTMH6rKRjiY221JoGOHnQ" class="btn js-link" data-tracking="ga('spotify')">🎧
                 Spotify 🎧</a>
 
             <a href="https://podcasts.apple.com/tw/podcast/%E8%80%81%E7%88%B8%E5%8F%96%E6%9A%96%E4%BA%92%E5%8A%A9%E6%9C%83-pity-party-for-daddies/id1517422456"
-                class="btn">🎧 Apple Podcast 🎧</a>
+                class="btn js-link" data-tracking="ga('apple podcast')">🎧 Apple Podcast 🎧</a>
 
-            <a href="https://player.soundon.fm/p/9c21fb22-5166-4cca-9499-961197a7e678" class="btn">🎧 Soundon 🎧</a>
+            <a href="https://player.soundon.fm/p/9c21fb22-5166-4cca-9499-961197a7e678" class="btn js-link" data-tracking="ga('soundon')">🎧 Soundon 🎧</a>
 
             <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9hcGkuc291bmRvbi5mbS92Mi9wb2RjYXN0cy85YzIxZmIyMi01MTY2LTRjY2EtOTQ5OS05NjExOTdhN2U2NzgvZmVlZC54bWw""
-            class=" btn">🎧 Google Podcast 🎧</a>
+            class="btn js-link" data-tracking="ga('google podcast')">🎧 Google Podcast 🎧</a>
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="modalbox" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade" id="modalbox" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -78,7 +83,19 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <!-- AddToAny BEGIN -->
+                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style"
+                            data-a2a-url="https://pitypartyfordaddies.github.io/">
+                            <a class="a2a_button_facebook"></a>
+                            <a class="a2a_button_facebook_messenger"></a>
+                            <a class="a2a_button_line"></a>
+                            <a class="a2a_button_twitter"></a>
+                            <a class="a2a_button_telegram"></a>
+                            <a class="a2a_button_copy_link"></a>
+                        </div>
+                        
+                        
+                        <!-- AddToAny END -->
                     </div>
                     <!-- <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -89,26 +106,17 @@
 
         </div>
 
-
-
-
-
-
         <footer class="mastfoot mt-auto">
             <div class="inner">
-                <a href="https://www.instagram.com/PityPartyForDaddies/" target="_blank">
+                <a href="https://www.instagram.com/PityPartyForDaddies/" class="js-link" data-tracking="ga('instagram')" target="_blank">
                     <image src="image/instagram.png"></image>
                 </a>
-                <a href="https://www.facebook.com/104001618018239/" target="_blank">
+                <a href="https://www.facebook.com/104001618018239/" class="js-link" data-tracking="ga('facebook')" target="_blank">
                     <image src="image/facebook.png"></image>
                 </a>
-                <a href="mailto:pitypartyfordaddies@gmail.com">
+                <a href="mailto:pitypartyfordaddies@gmail.com" class="js-link" data-tracking="ga('email')">
                     <image src="image/email.png"></image>
                 </a>
-                <!-- Button trigger modal -->
-                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalbox">
-                    Launch demo modal
-                </button> -->
             </div>
 
         </footer>
