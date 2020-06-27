@@ -37,8 +37,8 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modalmanager.min.js">
     </script>
-
     <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
     <script src="index.js"></script>
 </head>
 
@@ -50,9 +50,9 @@
                 <div class="heading">
                     <h3>老爸取暖互助會</h3>
                     <!-- Button trigger modal -->
-                    <a href="javascript:;" class="js-openBox" data-toggle="modal" data-target="#modalbox">
+                    <div class="js-openBox" data-toggle="modal" data-target="#modalbox">
                         <image src="image/shareBtn.png">
-                    </a>
+                    </div>
                 </div>
                 <p>Pity Party For Daddies</h1>
             </div>
@@ -84,16 +84,19 @@
                     </div>
                     <div class="modal-body">
                         <!-- AddToAny BEGIN -->
-                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style"
+                        <div class="a2a_kit a2a_kit_size_48 a2a_default_style a2a_buttons"
                             data-a2a-url="https://pitypartyfordaddies.github.io/">
                             <a class="a2a_button_facebook"></a>
                             <a class="a2a_button_facebook_messenger"></a>
                             <a class="a2a_button_line"></a>
                             <a class="a2a_button_twitter"></a>
                             <a class="a2a_button_telegram"></a>
-                            <a class="a2a_button_copy_link"></a>
+                            <!-- <a class="a2a_button_copy_link"></a> -->
                         </div>
-                        
+                        <div class="copy-link" data-clipboard-text="https://pitypartyfordaddies.github.io/">
+                            <span>複製連結</span>
+                            <image src="image/copy.png"></image>
+                        </div>
                         
                         <!-- AddToAny END -->
                     </div>

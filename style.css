@@ -42,6 +42,14 @@ body {
     max-width: 42em;
 }
 
+.a2a_buttons{
+    display: flex; 
+    justify-content: center;
+}
+
+.a2a_buttons a{
+    margin:8px;
+}
 /*
  * Modal
  */
@@ -60,6 +68,29 @@ body {
 .close{
     color: #fff;
     text-shadow: 0 1px 0 #333;
+}
+
+.copy-link{
+    background: #444;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    padding-left: 20px;
+    display: flow-root;
+}
+
+.copy-link span{
+    float:left;
+}
+.copy-link img{
+    float:right;
+    width: 24px;
+    margin-right: 8px;
+}
+
+.copy-link:active{
+    background: #666;
 }
 
 /*

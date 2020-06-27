@@ -19,6 +19,11 @@ $(document).ready(function () {
 		setTimeout(function() { target.location.href = href; }, 300);
     });
 
+    $('.copy-link').click(function(){
+        $('#modalbox').modal('hide')
+    });
+
+    new ClipboardJS('.copy-link');
 });
 
 var a2a_config = a2a_config || {};
