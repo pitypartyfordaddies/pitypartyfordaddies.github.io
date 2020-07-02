@@ -14,6 +14,9 @@ a:hover {
 .btn-secondary:hover,
 .btn-secondary:focus {}
 
+.popover-body{
+    padding: 15px;
+}
 
 /*
  * Base structure

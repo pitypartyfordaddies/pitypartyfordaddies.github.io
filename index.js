@@ -7,20 +7,38 @@ $(document).ready(function () {
         });
     }
 
-    $('.js-link').click(function(e){
-        var me = $(this);
-		eval(me.data('tracking'));
-		var href = me.attr('href');
-		if (/^javascript:/.test(href)) { return; }
-        var target = me.attr('target');
-		if (target && target != '_top') { return; }
-		target = target == '_top' ? top : window;
-		e.preventDefault();
-		setTimeout(function() { target.location.href = href; }, 300);
+    $('[data-toggle="popover"]').popover({
+        container: 'body',
+        animation: true,
+        delay:{ "show": 0, "hide": 600 }
     });
 
-    $('.copy-link').click(function(){
-        $('#modalbox').modal('hide')
+    $('[data-toggle="popover"]').on('shown.bs.popover', function(){
+        setTimeout(function(){
+            $('[data-toggle="popover"]').popover('hide');
+        }, 800);
+    });
+
+    $('.js-link').click(function (e) {
+        var me = $(this);
+        eval(me.data('tracking'));
+        var href = me.attr('href');
+        if (/^javascript:/.test(href)) {
+            return;
+        }
+        var target = me.attr('target');
+        if (target && target != '_top') {
+            return;
+        }
+        target = target == '_top' ? top : window;
+        e.preventDefault();
+        setTimeout(function () {
+            target.location.href = href;
+        }, 300);
+    });
+
+    $('.copy-link').click(function () {
+        // $('#modalbox').modal('hide')
     });
 
     new ClipboardJS('.copy-link');
@@ -32,6 +50,7 @@ a2a_config.callbacks.push({
     share: on_a2a_Share
 });
 a2a_config.track_links = 'ga';
+
 function on_a2a_Share(data) {
     console.log(data);
 }
