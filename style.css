@@ -14,9 +14,6 @@ a:hover {
 .btn-secondary:hover,
 .btn-secondary:focus {}
 
-.popover-body{
-    padding: 15px;
-}
 
 /*
  * Base structure
@@ -100,13 +97,13 @@ body {
  * Header
  */
 .masthead {
-    padding-top: 20px;
+    padding-top: 10px;
     /* margin-bottom: 2rem; */
 }
 
 .masthead .logo {
-    height: 130px;
-    width: 130px;
+    height: 115px;
+    width: 115px;
     border: 2px solid #e9e9e9;
     border-radius: 50%;
     margin-bottom: 15px;
@@ -135,7 +132,8 @@ body {
  * main
  */
 .main {
-    margin-top: 20px;
+    margin-top: 5px;
+    padding: 0px 20px 0px 20px;
 }
 
 .main .btn {
@@ -150,6 +148,7 @@ body {
     font-weight: 900;
     text-decoration: none;
     margin-bottom: 10px;
+    padding-bottom: 100px;
     padding: 14px 20px;
 }
 
@@ -162,9 +161,7 @@ body {
  */
 .mastfoot {
     color: rgba(255, 255, 255, .5);
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: relative;
     width: 100%;
     text-align: center;
     padding: 21px;
